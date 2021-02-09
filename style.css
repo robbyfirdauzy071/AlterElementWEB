@@ -20,8 +20,20 @@ body {
 .judul {
 	display: flex;
 	position: absolute;
-	width: 600px;
-	height: auto;
+	width: 50%;
+	height: 110%;
+}
+
+.judul h2 {
+	position: absolute;
+	width: 506px;
+	height: 60px;
+	left: 213px;
+	top: 158px;
+	font-family: "Poppins";
+	font-style: normal;
+	font-weight: normal;
+	color: blue;
 }
 
 .judul h3 {
@@ -69,33 +81,32 @@ body {
 /*kotak 1 [LOGODARK sebelah kanan]*/
 .kotakLOGO {
 	position: absolute;
-	width: 350.98px;
-	height: 350.98px;
-	left: 1020.6px;
-	top: 250px;
-	transform: rotate(-45deg);
-	border-radius: 20px;
-	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.51);
+	width: 50%;
+	height: 110%;
+	left: 680.6px;
+	z-index: 1;
 }
 
-.kotak1 {
+.kotakLOGO .kotak1 {
+	left: 370.6px;
+	top: 250px;
 	position: absolute;
 	width: 340.98px;
 	height: 340.98px;
 	box-shadow: 0px 4px 50px rgba(65, 53, 53, 0.51);
 	background: #313139;
 	border-radius: 20px;
-	transform: rotate(90deg);
+	transform: rotate(45deg);
 	z-index: 1;
 }
 
-.LOGOdark {
+.LOGOdark img {
 	position: absolute;
-	width: 872px;
-	height: 872px;
-	left: -340px;
+	width: 592px;
+	height: 592px;
+	left: 230px;
 	z-index: 1;
-	transform: rotate(45deg);
+	top: 120px;
 }
 
 /*kotak 2 [Kotak Biru Sebelah kiri]*/
@@ -116,8 +127,8 @@ body {
 	position: absolute;
 	width: 100px;
 	height: 100px;
-	left: 992px;
-	top: 254px;
+	left: 1002px;
+	top: 264px;
 	border: 3px solid rgba(250, 255, 0, 0.8);
 	box-sizing: border-box;
 	z-index: -1;
@@ -126,7 +137,7 @@ body {
 /*kotak sosmed email,wa,ig*/
 .sosmed {
 	position: absolute;
-	width: 204px;
+	width: 274px;
 	height: 55px;
 	left: 100px;
 	top: 535px;
@@ -170,17 +181,31 @@ body {
 	position: absolute;
 	left: 150px;
 	top: 0px;
+	width: 122px;
+	height: 55px;
+}
+
+.wa img {
+	width: 50px;
+	height: 49px;
 }
 
 .sosmed .kotak5 .wa a {
-	position: absolute;
 	left: 70px;
-	top: 0px;
+	top: 2px;
+	position: absolute;
+	width: 50px;
+	height: 48px;
 }
 
 .wa a:hover {
 	background-color: green;
 	border-radius: 30px;
+}
+
+.ig img {
+	width: 50px;
+	height: 50px;
 }
 
 .sosmed .kotak5 .ig a {
@@ -279,6 +304,7 @@ body {
 	width: 100%;
 	height: 934px;
 	top: 1100px;
+
 }
 
 /*best service*/
@@ -287,12 +313,13 @@ body {
 	width: 100%;
 	height: 315px;
 	top: -50px;
-
 }
 
 .service .best img {
 	position: absolute;
 	left: 50px;
+	width: 355px;
+	height: 352px;
 }
 
 .service .best h3 {
@@ -337,6 +364,8 @@ body {
 .service .consul img {
 	position: absolute;
 	left: 909px;
+	width: 355px;
+	height: 352px;
 }
 
 .service .consul h3 {
@@ -392,6 +421,8 @@ body {
 .service .maintance img {
 	position: absolute;
 	left: 50px;
+	width: 355px;
+	height: 352px;
 }
 
 .service .maintance h3 {
@@ -614,3 +645,479 @@ body {
 
 /*akhir footer*/
 /*Responsive break point*/
+/*tablet*/
+@media(max-width:768px) {
+
+	/*master head*/
+	.header {
+		width: 768px;
+		height: 500px;
+	}
+
+	/* kata pengantar */
+	.judul {
+		display: flex;
+		position: absolute;
+		width: 50%;
+		height: 600px;
+		left: -70px;
+		z-index: 1;
+	}
+
+	.judul p {
+		font-size: 12pt;
+		line-height: 20px;
+		top: 269px;
+	}
+
+	.judul h1 {
+		font-size: 17pt;
+		line-height: 25px;
+	}
+
+	.judul h2 {
+		font-size: 16pt;
+		top: 168px;
+		left: 197px;
+	}
+
+	.judul h3 {
+		font-size: 13pt;
+	}
+
+	/* akhir kata pengantar */
+	/* kotak logo dan aksesoris */
+	/* kotak logodark */
+	.kotakLOGO {
+		position: absolute;
+		width: 50%;
+		height: 600px;
+		left: 400px;
+		z-index: 1;
+		top: 30px;
+	}
+
+	.kotakLOGO .kotak1 {
+		left: 159px;
+		top: 150px;
+		position: absolute;
+		width: 240.98px;
+		height: 240.98px;
+	}
+
+	.LOGOdark img {
+		position: absolute;
+		width: 392px;
+		height: 392px;
+		left: 80px;
+		z-index: 1;
+		top: 70px;
+	}
+
+	/* kotak biru kiri */
+	.kotak2 {
+		position: absolute;
+		width: 90.92px;
+		height: 90.42px;
+		left: -30px;
+		top: 150.18px;
+	}
+
+	/* kotak kuning belakang LOGOdark */
+	.kotak3 {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		left: 552px;
+		top: 189px;
+	}
+
+	/*aksesoris bintang biru atas LOGODARK*/
+	.aksesoris2 {
+		position: absolute;
+		left: 708px;
+		top: 90px;
+	}
+
+	.aksesoris2 img {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+	}
+
+	/*bintang biru bawah LOGODARK*/
+	.aksesoris3 {
+		position: absolute;
+		left: 524px;
+		top: 321px;
+	}
+
+	.aksesoris3 img {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+	}
+
+	/* sosmed */
+	.sosmed {
+		position: absolute;
+		width: 250px;
+		height: 45px;
+		left: 50px;
+		top: 410px;
+	}
+
+	.sosmed .kotak4 {
+		position: absolute;
+		width: 94px;
+		height: 45px;
+		border: 1px solid #0071F2;
+		box-sizing: border-box;
+		border-radius: 5px;
+	}
+
+	.sosmed .kotak4 a {
+		width: 90px;
+		height: 40px;
+		left: 1px;
+		top: 1px;
+	}
+
+	.sosmed .kotak5 {
+		left: 130px;
+		top: 0px;
+		width: 122px;
+		height: 45px;
+	}
+
+	.wa img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.sosmed .kotak5 .wa a {
+		left: 70px;
+		top: 2px;
+		position: absolute;
+		width: 50px;
+		height: 48px;
+	}
+
+	.ig img {
+		width: 40px;
+		height: 40px;
+	}
+
+	.sosmed .kotak5 .ig a {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+	}
+
+	/*end of masterhead*/
+	/*awal tulisan alter element*/
+	.alter {
+		width: 100%;
+		height: auto;
+		left: -5px;
+		top: 524px;
+	}
+
+	.alter img {
+		width: 462px;
+		height: auto;
+	}
+
+	.element {
+		width: 663px;
+		height: auto;
+		left: 100px;
+		top: 672px;
+	}
+
+	.element img {
+		width: 662px;
+		height: auto;
+	}
+
+	/* akhir tulisan alter element */
+	/*best service*/
+	.service .best {
+		position: absolute;
+		width: 100%;
+		height: 315px;
+		top: -300px;
+	}
+
+	.service .best img {
+		position: absolute;
+		left: -20px;
+		width: 302px;
+		height: 204px;
+		top: 40px;
+	}
+
+	.service .best h3 {
+		left: 300px;
+		top: 80px;
+	}
+
+	.service .best p {
+		left: 300px;
+		top: 120px;
+		font-family: Roboto;
+		line-height: 25px;
+		align-items: center;
+		font-size: 14pt;
+	}
+
+	.service .best span {
+		width: 455px;
+		height: 6px;
+		left: 300px;
+		top: 300px;
+	}
+
+	/*consul*/
+	.service .consul {
+		position: absolute;
+		width: 100%;
+		height: 319px;
+		top: 20px;
+	}
+
+	.service .consul img {
+		position: absolute;
+		left: 459px;
+		width: 302px;
+		height: 204px;
+		top: 50px;
+	}
+
+	.service .consul h3 {
+		position: absolute;
+		width: 337px;
+		height: 60px;
+		left: 20px;
+		top: 35px;
+	}
+
+	.service .consul p {
+		position: absolute;
+		width: 411px;
+		height: 350px;
+		left: 20px;
+		font-size: 14pt;
+		line-height: 25px;
+	}
+
+	.service .consul span {
+		position: absolute;
+		width: 411px;
+		height: 6px;
+		left: 20px;
+		top: 290px;
+	}
+
+	/*maintance*/
+	.service .maintance {
+		position: absolute;
+		width: 100%;
+		height: 306px;
+		top: 343px;
+
+	}
+
+	.service .maintance img {
+		left: -20px;
+		width: 302px;
+		height: 204px;
+		top: 40px;
+	}
+
+	.service .maintance h3 {
+		position: absolute;
+		width: 432px;
+		height: 60px;
+		left: 300px;
+		top: 40px;
+		line-height: 25px;
+	}
+
+	.service .maintance p {
+		position: absolute;
+		width: 451px;
+		height: 350px;
+		left: 300px;
+		font-size: 14pt;
+		line-height: 25px;
+
+	}
+
+	.service .maintance span {
+		position: absolute;
+		width: 458px;
+		height: 6px;
+		left: 300px;
+		top: 300px;
+		border-radius: 20px;
+	}
+
+	/*Akhir service*/
+	/*testimoni*/
+	.testimoni {
+		position: absolute;
+		width: 100%;
+		height: 700px;
+		top: 1760px;
+	}
+
+	.testimoni .tulisan {
+		position: absolute;
+		width: 200px;
+		height: 60px;
+		left: 609px;
+		top: 20px;
+	}
+
+	.testimoni .tulisan h1 {
+		position: absolute;
+		width: 300px;
+		height: 50px;
+		left: -295px;
+	}
+
+	.testimoni .tulisan span {
+		position: absolute;
+		width: 165px;
+		height: 4px;
+		left: -295px;
+		top: 50px;
+	}
+
+	.testimoni .kotaktesti {
+		position: absolute;
+		width: 100%;
+		height: 400px;
+		top: 250px;
+		background: #29282F;
+	}
+
+	.testimoni .kotaktesti .letakkotakfoto {
+		position: absolute;
+		width: 290px;
+		height: 290px;
+		left: 250px;
+		top: -100px;
+
+	}
+
+	.testimoni .kotaktesti .kotakfoto {
+		position: absolute;
+		width: 270px;
+		height: 290px;
+		left: 10px;
+	}
+
+	.testimoni .kotaktesti .letakkotakfoto img {
+		position: absolute;
+		left: -50px;
+		top: -189px;
+		width: 420px;
+		height: 470px;
+	}
+
+	/* kotak kuning */
+	.testimoni .kotak3 {
+		width: 50px;
+		height: 50px;
+		left: 286px;
+		top: 148.29px;
+		z-index: -1;
+	}
+
+	/* bintang biru */
+	.testimoni .aksesoris3 {
+		position: absolute;
+		left: 255px;
+		top: 370px;
+		z-index: 1;
+	}
+
+	/* bulat biru */
+	.testimoni .kotak2 {
+		z-index: 1;
+		border-radius: 300px;
+		left: 480px;
+		opacity: 0.5;
+		width: 100px;
+		height: 100px;
+	}
+
+	.testimoni .namatesti {
+		width: 250px;
+		height: 100px;
+		position: absolute;
+		left: 300px;
+		top: 450px;
+	}
+
+	.testimoni .namatesti h2 {
+		font-family: Poppins;
+		font-style: normal;
+		line-height: 50px;
+		text-transform: capitalize;
+
+	}
+
+	.testimoni .kesan {
+		width: 490px;
+		height: 100px;
+		left: 170px;
+		top: 550px;
+	}
+
+	.testimoni .kesan p {
+		line-height: 25px;
+		font: 12pt;
+	}
+
+	/*akhir testimoni*/
+	/*footer*/
+	.footer {
+		width: 100%;
+		height: 200px;
+		top: 2420px;
+
+	}
+
+	.footer .info {
+		width: 600px;
+		height: 143px;
+		left: 79px;
+		top: 20px;
+	}
+
+	.info .medsos {
+
+		width: 140px;
+		height: 55px;
+		left: 15px;
+	}
+
+	.info .medsos .ig a {
+
+		width: 40px;
+		height: 40px;
+		left: 80px;
+		top: 1px;
+	}
+
+	.info .medsos .wa a {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+	}
+
+	/*akhir footer*/
+}
