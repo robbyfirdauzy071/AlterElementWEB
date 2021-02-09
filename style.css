@@ -3,11 +3,27 @@
 }
 
 body {
-	overflow: hidden;
 	z-index: 0;
 }
 
+/*navbar*/
+
 /*master head*/
+.header {
+	display: grid;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 110%;
+}
+
+.judul {
+	display: flex;
+	position: absolute;
+	width: 600px;
+	height: auto;
+}
+
 .judul h3 {
 	position: absolute;
 	width: 506px;
@@ -50,22 +66,39 @@ body {
 	color: #FFFFFF;
 }
 
+/*kotak 1 [LOGODARK sebelah kanan]*/
+.kotakLOGO {
+	position: absolute;
+	width: 350.98px;
+	height: 350.98px;
+	left: 1020.6px;
+	top: 250px;
+	transform: rotate(-45deg);
+	border-radius: 20px;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.51);
+}
 
-
-/*kotak 1*/
 .kotak1 {
 	position: absolute;
 	width: 340.98px;
 	height: 340.98px;
-	left: 1055.6px;
-	top: 176.18px;
+	box-shadow: 0px 4px 50px rgba(65, 53, 53, 0.51);
 	background: #313139;
-	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.51);
 	border-radius: 20px;
-	transform: rotate(-45deg);
+	transform: rotate(90deg);
+	z-index: 1;
 }
 
-/*kotak 2*/
+.LOGOdark {
+	position: absolute;
+	width: 872px;
+	height: 872px;
+	left: -340px;
+	z-index: 1;
+	transform: rotate(45deg);
+}
+
+/*kotak 2 [Kotak Biru Sebelah kiri]*/
 .kotak2 {
 	position: absolute;
 	width: 145.92px;
@@ -78,97 +111,506 @@ body {
 	z-index: -1;
 }
 
+/*kotak 3 [kuning di belakang kotak LOGODARk]*/
 .kotak3 {
 	position: absolute;
 	width: 100px;
 	height: 100px;
 	left: 992px;
-	top: 204px;
+	top: 254px;
 	border: 3px solid rgba(250, 255, 0, 0.8);
 	box-sizing: border-box;
 	z-index: -1;
 }
 
-.kotak4 {
+/*kotak sosmed email,wa,ig*/
+.sosmed {
 	position: absolute;
-	left: 129px;
-	top: -142px;
+	width: 204px;
+	height: 55px;
+	left: 100px;
+	top: 535px;
+
 }
 
-.kotak4 .kotakemail {
+.sosmed .kotak4 {
 	position: absolute;
 	width: 124px;
 	height: 55px;
-	top: 675px;
 	border: 1px solid #0071F2;
 	box-sizing: border-box;
 	border-radius: 5px;
 }
 
-.kotak4 a {
+.sosmed .kotak4 a {
 	position: absolute;
-	width: 90px;
-	height: 38px;
-	left: 22px;
-	top: 686px;
+	width: 120px;
+	height: 45px;
+	top: 5px;
 	font-family: Poppins;
 	text-decoration: none;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 15px;
 	line-height: 37px;
+	color: #0071F2;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.kotak4:hover {
+	background-color: #0071F2;
+}
+
+.kotak4 a:hover {
 	color: #FFFFFF;
 }
 
-.kotak5 {
+.sosmed .kotak5 {
 	position: absolute;
-	left: 260px;
-	top: 535px;
+	left: 150px;
+	top: 0px;
 }
 
-.kotak5 .wa a {
+.sosmed .kotak5 .wa a {
 	position: absolute;
 	left: 70px;
 	top: 0px;
 }
 
-.kotak5 .ig a {
+.wa a:hover {
+	background-color: green;
+	border-radius: 30px;
+}
+
+.sosmed .kotak5 .ig a {
 	position: absolute;
 	width: 50px;
 	height: 50px;
 }
 
-/*aksesoris*/
+.ig a:hover {
+	background-color: #ce1f70b9;
+	border-radius: 25px;
+}
+
+/*aksesoris [kotak kuning]*/
 .aksesoris1 {
 	position: absolute;
 	width: 50px;
 	height: 50px;
 	left: 900px;
-	top: 562.07px;
+	top: 662.07px;
 	background: rgba(250, 255, 0, 0.8);
 	transform: rotate(-45deg);
 }
 
+/*aksesoris bintang biru atas LOGODARK*/
 .aksesoris2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	left: 1245px;
+	top: 90px;
+}
+
+.aksesoris2 img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+
+}
+
+/*bintang biru bawah LOGODARK*/
+.aksesoris3 {
 	position: absolute;
 	width: 135px;
 	height: 135px;
-	left: 1000px;
-	top: 401px;
-	position: relative;
+	left: 924px;
+	top: 431px;
+
+
 }
 
-.aksesoris2 .strip1 {
+.aksesoris3 img {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+/*akhir masterhead*/
+/*awal tulisan alter element*/
+.alter {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	left: -5px;
+	top: 700px;
+	background-size: cover;
+}
+
+.alter img {
+	width: 662px;
+	height: 211px;
+}
+
+
+
+.element {
+	position: absolute;
+	width: 881px;
+	height: auto;
+	left: 456px;
+	top: 932px;
+}
+
+.element img {
+	width: 889px;
+	height: auto;
+	background-size: cover;
+	left: 456px;
+	top: 932px;
+}
+
+/*akhir tulisan alter element*/
+/*Service*/
+.service {
+	position: absolute;
+	width: 100%;
+	height: 934px;
+	top: 1100px;
+}
+
+/*best service*/
+.service .best {
+	position: absolute;
+	width: 100%;
+	height: 315px;
+	top: -50px;
+
+}
+
+.service .best img {
+	position: absolute;
+	left: 50px;
+}
+
+.service .best h3 {
+	color: #FFFFFF;
+	position: absolute;
+	left: 700px;
+	top: 80px;
+	text-decoration: underline;
+	font-family: "Poppins";
+}
+
+.service .best p {
+	color: #FFFFFF;
+	position: absolute;
+	left: 700px;
+	top: 120px;
+	font-family: Roboto;
+	line-height: 40px;
 	display: flex;
+	align-items: center;
+	font-size: 20px;
 }
 
-.strip1 span {
-	display: block;
-	width: 15px;
-	height: 3px;
-	background-color: #0071F2;
-	border-radius: 3px;
+.service .best span {
+	position: absolute;
+	width: 645px;
+	height: 6px;
+	left: 700px;
+	top: 315px;
+	background: #C4C4C4;
+	border-radius: 5px;
 }
+
+/*consul*/
+.service .consul {
+	position: absolute;
+	width: 100%;
+	height: 319px;
+	top: 270px;
+}
+
+.service .consul img {
+	position: absolute;
+	left: 909px;
+}
+
+.service .consul h3 {
+	position: absolute;
+	width: 337px;
+	height: 60px;
+	left: 20px;
+	top: 35px;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 60px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	text-decoration: underline;
+	color: #FFFFFF;
+}
+
+.service .consul p {
+	position: absolute;
+	width: 711px;
+	height: 350px;
+	left: 20px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+.service .consul span {
+	position: absolute;
+	width: 711px;
+	height: 6px;
+	left: 20px;
+	top: 290px;
+	background: #C4C4C4;
+}
+
+/*maintance*/
+.service .maintance {
+	position: absolute;
+	width: 100%;
+	height: 306px;
+	top: 589px;
+}
+
+.service .maintance img {
+	position: absolute;
+	left: 50px;
+}
+
+.service .maintance h3 {
+	position: absolute;
+	width: 432px;
+	height: 60px;
+	left: 700px;
+	top: 10px;
+	text-decoration: underline;
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.service .maintance p {
+	position: absolute;
+	width: 611px;
+	height: 350px;
+	left: 700px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+.service .maintance span {
+	position: absolute;
+	width: 645px;
+	height: 6px;
+	left: 700px;
+	top: 300px;
+	background: #C4C4C4;
+}
+
+/*Akhir service*/
+/*testimoni*/
+.testimoni {
+	position: absolute;
+	width: 100%;
+	height: 500px;
+	top: 1999px;
+}
+
+.testimoni .tulisan {
+	position: absolute;
+	width: 200px;
+	height: 60px;
+	left: 609px;
+	top: 40px;
+}
+
+.testimoni .tulisan h1 {
+	position: absolute;
+	width: 300px;
+	height: 50px;
+	font-family: Poppins;
+	font-style: normal;
+	line-height: 50px;
+	text-transform: capitalize;
+	color: #FFFFFF;
+}
+
+.testimoni .tulisan span {
+	position: absolute;
+	width: 110px;
+	height: 4px;
+	left: 50px;
+	background: #FFFFFF;
+	border-radius: 2px;
+	top: 50px;
+}
+
+.testimoni .kotaktesti {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	top: 150px;
+	background: #29282F;
+}
+
+.testimoni .kotaktesti .letakkotakfoto {
+	position: absolute;
+	width: 390px;
+	height: 390px;
+	left: 242px;
+	top: -50px;
+
+}
+
+.testimoni .kotaktesti .kotakfoto {
+	position: absolute;
+	width: 370px;
+	height: 390px;
+	background: #313139;
+	transform: rotate(-45deg);
+	border-radius: 300px;
+	box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.51);
+}
+
+.testimoni .kotaktesti .letakkotakfoto img {
+	position: absolute;
+	left: -55px;
+	top: -185px;
+	width: 520px;
+	height: 570px;
+	border-radius: 300px;
+	z-index: 3;
+	background-size: cover;
+}
+
+.testimoni .kotak3 {
+	position: absolute;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 196px;
+	top: 158.29px;
+	border: 3px solid rgba(250, 255, 0, 0.8);
+	box-sizing: border-box;
+	transform: rotate(45deg);
+	z-index: 1;
+}
+
+.testimoni .aksesoris3 {
+	position: absolute;
+	left: 225px;
+	top: 390px;
+	z-index: 1;
+}
+
+.testimoni .kotak2 {
+	z-index: 1;
+	border-radius: 300px;
+	left: 550px;
+	opacity: 0.5;
+	width: 100px;
+	height: 100px;
+}
+
+.testimoni .namatesti {
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	left: 826px;
+	top: 150px;
+	color: #FFFFFF;
+
+
+}
+
+.testimoni .namatesti h2 {
+	font-family: Poppins;
+	font-style: normal;
+	line-height: 50px;
+	text-transform: capitalize;
+
+}
+
+.testimoni .kesan {
+	width: 490px;
+	height: 100px;
+	position: absolute;
+	left: 720px;
+	top: 290px;
+	color: #FFFFFF;
+}
+
+.testimoni .kesan p {
+	font-family: Roboto;
+	line-height: 30px;
+}
+
+/*akhir testimoni*/
+/*footer*/
+.footer {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 2550px;
+	color: #FFFFFF;
+}
+
+.footer .info {
+	position: absolute;
+	width: 600px;
+	height: 143px;
+	left: 179px;
+}
+
+.info .medsos {
+	position: absolute;
+	width: 140px;
+	height: 55px;
+	left: 20px;
+}
+
+.info .medsos .ig a {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 80px;
+	top: 1px;
+}
+
+.info .medsos .wa a {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+}
+
+/*akhir footer*/
+/*Responsive break point*/
